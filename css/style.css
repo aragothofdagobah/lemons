@@ -1,0 +1,37 @@
+body {
+  background-color: #BCD5D1; }
+
+.jumbotron {
+  max-height: 198px;
+  background-color: white;
+  color: #FFD351;
+  padding-bottom: 0px;
+  margin-bottom: 0px; }
+
+.contain {
+  margin: 20px;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  float: right;
+  padding-bottom: 40px; }
+
+.lemon {
+  width: 100px;
+  height: 100px;
+  background: #FFDE51;
+  border: 2px solid;
+  border-radius: 75px 15px; }
+
+.space {
+  height: 20px; }
+
+.shadow {
+  display: none;
+  width: 100px;
+  height: 10px;
+  background: #DCDCDC;
+  -moz-border-radius: 100px/50px;
+  -webkit-border-radius: 100px/50px;
+  border-radius: 100px/50px; }
+
+/*# sourceMappingURL=style.css.map */
