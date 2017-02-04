@@ -11,4 +11,9 @@ $(document).ready(function (){
   $(".lemon").click(function (){
 	$("#why").fadeOut();
   });
+    
+  $(".lemon-slice").click(function (){
+    $(".wrapper").addClass("wrapper-move");
+    $(".lemon-slice").addClass("lemon-rotate");
+  });
 });

@@ -3,6 +3,7 @@
 body
   background-color: #FFD351
   font-family: 'Bowlby One SC', cursive
+  overflow-x: hidden
 
 .jumbotron
   max-height: 198px
@@ -48,4 +49,102 @@ body
   
   #why
     text-align: center
+
+
+.lemon-slice
+  height: 15em
+  width: 15em
+  border-radius: 50%
+  background-color: #FFD351
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  margin-top: 20px
+  border: 1px solid grey
+  z-index: -1
+  
+.lemon-rotate
+  @include animation(spin 3.0s ease)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+  
     
+.wrapper-move
+  @include animation(move 3.0s)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards  
+  
+  
+  
+.border
+  height: 13.5em
+  width: 13.5em
+  border-radius: 50%
+  margin: auto
+  margin-top: 7px
+  border: 4px solid white
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  z-index: -1
+  
+  
+.pit
+  background-color: white
+  height: 2em
+  width: 2em
+  border-radius: 50%
+  margin: auto
+  margin-top: 6em
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  z-index: -1
+  
+.line
+  position: absolute
+  margin-left: auto
+  margin-right: auto
+  left: 0
+  right: 0
+  border: 2px solid white
+  z-index: 0
+  margin-top: 6.7em
+
+#l1
+  -moz-transform: rotate(45deg)
+  -o-transform: rotate(45deg)  
+  -webkit-transform: rotate(45deg)  
+  -ms-transform: rotate(45deg)  
+  transform: rotate(45deg)
+
+#l2
+  -moz-transform: rotate(90deg)
+  -o-transform: rotate(90deg)  
+  -webkit-transform: rotate(90deg)  
+  -ms-transform: rotate(90deg)  
+  transform: rotate(90deg)
+#l3
+  -moz-transform: rotate(135deg)
+  -o-transform: rotate(135deg)  
+  -webkit-transform: rotate(135deg)  
+  -ms-transform: rotate(135deg)  
+  transform: rotate(135deg)
+
+@include keyframes(spin) 
+  from 
+    transform: rotate(0deg)
+  to 
+    transform: rotate(270deg)
+
+@include keyframes(move) 
+  from 
+    transform: translateX(0px)
+  to 
+    transform: translateX(400px)
