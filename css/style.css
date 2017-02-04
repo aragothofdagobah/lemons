@@ -135,31 +135,36 @@ body {
   from {
     transform: rotate(0deg); }
   to {
-    transform: rotate(270deg); } }
+    transform: rotate(360deg); } }
 @-moz-keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
-    transform: rotate(270deg); } }
+    transform: rotate(360deg); } }
 @keyframes spin {
   from {
     transform: rotate(0deg); }
   to {
-    transform: rotate(270deg); } }
+    transform: rotate(360deg); } }
 @-webkit-keyframes move {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(400px); } }
+    transform: translateX(550px); } }
 @-moz-keyframes move {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(400px); } }
+    transform: translateX(550px); } }
 @keyframes move {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(400px); } }
+    transform: translateX(550px); } }
+#buffer {
+  display: none; }
+
+#fact {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

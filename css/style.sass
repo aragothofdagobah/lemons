@@ -69,12 +69,11 @@ body
   @include animation(spin 3.0s ease)
   animation-fill-mode: forwards
   -webkit-animation-fill-mode: forwards
-  
     
 .wrapper-move
   @include animation(move 3.0s)
   animation-fill-mode: forwards
-  -webkit-animation-fill-mode: forwards  
+  -webkit-animation-fill-mode: forwards
   
   
   
@@ -141,10 +140,15 @@ body
   from 
     transform: rotate(0deg)
   to 
-    transform: rotate(270deg)
+    transform: rotate(360deg)
 
 @include keyframes(move) 
   from 
     transform: translateX(0px)
   to 
-    transform: translateX(400px)
+    transform: translateX(550px)
+
+#buffer
+  display: none
+#fact
+  display: none

@@ -13,7 +13,11 @@ $(document).ready(function (){
   });
     
   $(".lemon-slice").click(function (){
-    $(".wrapper").addClass("wrapper-move");
-    $(".lemon-slice").addClass("lemon-rotate");
+	$("#why2").fadeOut();
+	$("#why3").delay(400).fadeIn();
+	setTimeout( function (){
+	  $(".wrapper").addClass("wrapper-move");
+      $(".lemon-slice").addClass("lemon-rotate");
+	}, 1500); 
   });
 });
