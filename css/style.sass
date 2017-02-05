@@ -3,7 +3,8 @@
 body
   background-color: #FFD351
   font-family: 'Bowlby One SC', cursive
-  overflow-x: hidden
+  overflow: hidden
+  -webkit-transform:translate3d(0,0,0)
 
 .jumbotron
   max-height: 198px
@@ -22,8 +23,7 @@ body
 .lemon
   width: 100px
   height: 100px
-  background: #FFDE51
-            
+  background: #FFDE51          
   border: 2px solid
   border-radius: 75px 15px 
 
@@ -64,18 +64,38 @@ body
   margin-top: 20px
   border: 1px solid grey
   z-index: -1
-  
+
+
 .lemon-rotate
-  @include animation(spin 3.0s ease)
+  @include animation(spin1 3.0s ease)
   animation-fill-mode: forwards
   -webkit-animation-fill-mode: forwards
-    
+
+
 .wrapper-move
-  @include animation(move 3.0s)
+  @include animation(move1 3.0s)
   animation-fill-mode: forwards
   -webkit-animation-fill-mode: forwards
   
-  
+.lemon-rotate-left
+  @include animation(spin2 6.0s ease)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+
+.wrapper-move-left
+  @include animation(move2 6.0s ease)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+
+.lemon-rotate-right
+  @include animation(spin3 6.0s ease)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
+
+.wrapper-move-right
+  @include animation(move3 6.0s ease)
+  animation-fill-mode: forwards
+  -webkit-animation-fill-mode: forwards
   
 .border
   height: 13.5em
@@ -136,19 +156,43 @@ body
   -ms-transform: rotate(135deg)  
   transform: rotate(135deg)
 
-@include keyframes(spin) 
+@include keyframes(spin1) 
   from 
     transform: rotate(0deg)
   to 
     transform: rotate(360deg)
 
-@include keyframes(move) 
+@include keyframes(move1) 
   from 
     transform: translateX(0px)
   to 
-    transform: translateX(550px)
+    transform: translateX(41vw)
 
+@include keyframes(spin2)
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(-1080deg)
+
+@include keyframes(move2)
+  from
+    transform: translateX(41vw)
+  to
+    transform: translateX(-41vw)
+
+@include keyframes(spin3)
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(1080deg)
+
+@include keyframes(move3)
+  from
+    transform: translateX(-41vw)
+  to
+    transform: translateX(41vw)
 #buffer
   display: none
 #fact
+  text-align: center
   display: none

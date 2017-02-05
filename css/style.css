@@ -1,7 +1,7 @@
 body {
   background-color: #FFD351;
   font-family: "Bowlby One SC", cursive;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .jumbotron {
   max-height: 198px;
@@ -59,16 +59,44 @@ body {
   z-index: -1; }
 
 .lemon-rotate {
-  -webkit-animation: spin 3s ease;
-  -moz-animation: spin 3s ease;
-  animation: spin 3s ease;
+  -webkit-animation: spin1 3s ease;
+  -moz-animation: spin1 3s ease;
+  animation: spin1 3s ease;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards; }
 
 .wrapper-move {
-  -webkit-animation: move 3s;
-  -moz-animation: move 3s;
-  animation: move 3s;
+  -webkit-animation: move1 3s;
+  -moz-animation: move1 3s;
+  animation: move1 3s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+.lemon-rotate-left {
+  -webkit-animation: spin2 6s ease;
+  -moz-animation: spin2 6s ease;
+  animation: spin2 6s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+.wrapper-move-left {
+  -webkit-animation: move2 6s ease;
+  -moz-animation: move2 6s ease;
+  animation: move2 6s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+.lemon-rotate-right {
+  -webkit-animation: spin3 6s ease;
+  -moz-animation: spin3 6s ease;
+  animation: spin3 6s ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards; }
+
+.wrapper-move-right {
+  -webkit-animation: move3 6s ease;
+  -moz-animation: move3 6s ease;
+  animation: move3 6s ease;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards; }
 
@@ -131,40 +159,101 @@ body {
   -ms-transform: rotate(135deg);
   transform: rotate(135deg); }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes spin1 {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-@-moz-keyframes spin {
+@-moz-keyframes spin1 {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-@keyframes spin {
+@keyframes spin1 {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
-@-webkit-keyframes move {
+@-webkit-keyframes move1 {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(550px); } }
-@-moz-keyframes move {
+    transform: translateX(41vw); } }
+@-moz-keyframes move1 {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(550px); } }
-@keyframes move {
+    transform: translateX(41vw); } }
+@keyframes move1 {
   from {
     transform: translateX(0px); }
   to {
-    transform: translateX(550px); } }
+    transform: translateX(41vw); } }
+@-webkit-keyframes spin2 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-1080deg); } }
+@-moz-keyframes spin2 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-1080deg); } }
+@keyframes spin2 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(-1080deg); } }
+@-webkit-keyframes move2 {
+  from {
+    transform: translateX(41vw); }
+  to {
+    transform: translateX(-41vw); } }
+@-moz-keyframes move2 {
+  from {
+    transform: translateX(41vw); }
+  to {
+    transform: translateX(-41vw); } }
+@keyframes move2 {
+  from {
+    transform: translateX(41vw); }
+  to {
+    transform: translateX(-41vw); } }
+@-webkit-keyframes spin3 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(1080deg); } }
+@-moz-keyframes spin3 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(1080deg); } }
+@keyframes spin3 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(1080deg); } }
+@-webkit-keyframes move3 {
+  from {
+    transform: translateX(-41vw); }
+  to {
+    transform: translateX(41vw); } }
+@-moz-keyframes move3 {
+  from {
+    transform: translateX(-41vw); }
+  to {
+    transform: translateX(41vw); } }
+@keyframes move3 {
+  from {
+    transform: translateX(-41vw); }
+  to {
+    transform: translateX(41vw); } }
 #buffer {
   display: none; }
 
 #fact {
+  text-align: center;
   display: none; }
 
 /*# sourceMappingURL=style.css.map */
