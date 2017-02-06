@@ -256,4 +256,13 @@ body {
   text-align: center;
   display: none; }
 
+@media screen and (min-device-width: 320px) and (max-device-width: 780px) {
+  .jumbotron {
+    max-height: 300px;
+    width: 100%;
+    max-width: 100%;
+    text-align: center; }
+    .jumbotron h1 {
+      font-size: 80px; } }
+
 /*# sourceMappingURL=style.css.map */

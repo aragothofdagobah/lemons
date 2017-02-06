@@ -1,6 +1,12 @@
+var facts = [
+  "Fact one", 
+  "Fact two", 
+  "Fact Three"
+];
 var width = $(window).width();
 var height = $(window).height();
 var clicked = 0;
+var factNum = 0;
 var onLeft = false;
 $(document).ready(function (){
   $(".lemon").mouseenter(function (){
@@ -19,7 +25,7 @@ $(document).ready(function (){
 	if(clicked === 0)
 	  displayFactOne();
 	else
-	  displayFact();
+	  moveLemon();
   });
 });
    
@@ -36,7 +42,7 @@ var displayFactOne = function (){
   $("#fact").delay(2000).fadeIn();
 };
 
-var displayFact = function(){
+var moveLemon = function(){
   if(onLeft){
 	$(".lemon-slice").addClass("lemon-rotate-right");
 	$(".wrapper").addClass("wrapper-move-right");
@@ -50,4 +56,15 @@ var displayFact = function(){
 	$(".wrapper").removeClass("wrapper-move-right");
   }
   onLeft= !onLeft;
+  displayFact();
+};
+
+var displayFact = function(){
+  $("#fact").delay(1300).fadeOut();
+ setTimeout( function (){  
+    $("#fact").empty();
+    $("#fact").text(facts[factNum]);
+    $("#fact").fadeIn();
+    factNum++;
+ }, 2000);
 };
