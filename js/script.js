@@ -82,7 +82,7 @@ var moveLemon = function(){
 };
 
 var displayFact = function(){
-  var fact = factNum != facts.length ? facts[factNum] : "Please Click the lemon to reset";
+  var fact = factNum != facts.length ? facts[factNum] : "Please Click the lemon in the top right to reset";
   $("#fact").delay(800).fadeOut();
  setTimeout( function (){  
     $("#fact").empty();
