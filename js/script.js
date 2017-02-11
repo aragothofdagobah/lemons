@@ -41,7 +41,7 @@ $(document).ready(function (){
   });
 
   $(".lemon").click(function (){
-      displayFactOne(); 
+      location.reload();
   });
   $(".lemon-slice").click(function (){
 	if(clicked === 0)
@@ -82,10 +82,11 @@ var moveLemon = function(){
 };
 
 var displayFact = function(){
+  var fact = factNum != facts.length ? facts[factNum] : "Please Click the lemon to reset";
   $("#fact").delay(800).fadeOut();
  setTimeout( function (){  
     $("#fact").empty();
-    $("#fact").text(facts[factNum]);
+    $("#fact").text(fact);
     $("#fact").fadeIn();
     factNum++;
  }, 2700);
