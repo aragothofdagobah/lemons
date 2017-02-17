@@ -256,6 +256,12 @@ body {
   text-align: center;
   display: none; }
 
+.fact-2 {
+  text-align: center;
+  color: white;
+  display: none;
+  margin-top: 25vh; }
+
 @media screen and (min-device-width: 320px) and (max-device-width: 780px) {
   .jumbotron {
     max-height: 300px;
@@ -263,6 +269,13 @@ body {
     max-width: 100%;
     text-align: center; }
     .jumbotron h1 {
-      font-size: 80px; } }
+      font-size: 60px; }
+
+  .main {
+    display: none; }
+
+  .fact-2 {
+    display: block;
+    font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

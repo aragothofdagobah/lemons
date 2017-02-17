@@ -49,6 +49,9 @@ $(document).ready(function (){
 	else
 	  moveLemon();
   });
+  $(".fact-2").click(function (){
+	displayMobileFact();
+  });
 });
    
 var displayFactOne = function (){
@@ -90,4 +93,15 @@ var displayFact = function(){
     $("#fact").fadeIn();
     factNum++;
  }, 2700);
+};
+
+var displayMobileFact = function(){
+  var fact = factNum != facts.length ? facts[factNum] : "Thats all folks!";
+  $(".fact-2").fadeOut();
+  setTimeout( function (){
+	$(".fact-2").empty();
+	$(".fact-2").text(fact);
+	$(".fact-2").fadeIn();
+	factNum++;
+  }, 400);
 };
